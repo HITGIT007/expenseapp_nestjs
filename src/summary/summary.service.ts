@@ -6,6 +6,7 @@ import { ReportService } from 'src/report/report.service';
 export class SummaryService {
   constructor(private readonly reportService: ReportService) {}
 
+  //Total Income 
   calculateSummary() {
     const totalExpense = this.reportService
       .getAllReports(ReportType.EXPENSE)
